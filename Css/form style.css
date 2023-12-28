@@ -1,0 +1,88 @@
+.form-container{
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 90%;  
+}
+h1{
+    text-align: center;
+    color: rgb(0,102,153);
+}
+.form-container p{
+    text-align: center;
+}
+input[type=text]{
+border-radius: 2rem;
+border: 2px solid #ccc;
+width: 75%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+ font-size: 20px;
+ padding: 10px 10px;
+}
+input[type=tel]{
+    border-radius: 2rem;
+    border: 2px solid #ccc;
+    width: 75%;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+     font-size: 20px;
+     padding: 10px 10px;
+    }
+    input[type=number]{
+        border-radius: 2rem;
+        border: 2px solid #ccc;
+        width: 75%;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         font-size: 20px;
+         padding: 10px 10px;
+        }
+        input[type=email]{
+            border-radius: 2rem;
+        border: 2px solid #ccc;
+        width: 75%;
+         margin-left: auto;
+         margin-right: auto;
+         display: block;
+         font-size: 20px;
+         padding: 10px 10px;
+            }
+
+            input[type=file]{
+                border-radius: 2rem;
+            border: 2px solid #ccc;
+            width: 75%;
+             margin-left: auto;
+             margin-right: auto;
+             display: block;
+             font-size: 20px;
+             padding: 10px 10px;
+            }
+select{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    display: block;
+    padding: 10px 10px;
+}
+            input[type=submit]{
+                border-radius: 2rem;
+                border: none;
+                width: 50%;
+font-size: 23px;
+padding: 10px 10px;
+text-align: center;
+background-color: rgb(0,102,153);
+margin-bottom: 12px;
+color: white;
+            }
+            
+input[type=submit]{
+    cursor: pointer;
+}

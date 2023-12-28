@@ -1,0 +1,152 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-size: 13px;
+    
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+   }
+   a:link{
+    text-decoration: none;
+   }
+   .more-info{
+    text-align: center;
+   }
+   .more-info b{
+    margin-left: 22px;
+    color: mediumseagreen;
+   }
+   .more-info b i{
+    color: mediumseagreen;
+    font-size: 18px;
+   }
+   .more-info i{
+   margin-left: 10px;
+   color: yellow;
+   font-size: 22px;
+   }
+
+   .order-container{
+color: #777;
+    margin-bottom: 18px;
+    margin-top: 0;
+    top: 0;
+    position: sticky;
+   }
+   .order-container img{
+    width: 152px;
+   }
+   .order-container p:nth-child(1){
+    padding: 5px 5px;
+    font-size: 15px;
+    background-color: rgb(0,102,153);
+    color: white;
+    text-align: center;
+   margin-top: 0;
+    margin-left: 0;
+   }
+   .order-container p{
+    margin-left: 10px;
+   }
+
+.container-fliud{
+background-color: #f1f1f1;
+color: #777;
+bottom: 0;
+padding-bottom: 4px;
+position: sticky;
+overflow-y: scroll;
+top: 30%;
+}
+   
+
+   .close-page{
+    padding: 10px 10px;
+    width: 42%;
+    color: white;
+    background-color: rgb(0,102,153);
+    border-radius: 2rem;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+   }
+   
+   .close-page a:link{
+    color: white;
+    text-decoration: none;
+   }
+   .close-page a:visited{
+    color: white;
+   }
+   
+
+.Report-order-container{
+   top: 0;
+   right: 0;
+     left: 0;
+     bottom: 0;
+     background-color: #ccc;
+     position: fixed;
+     transition: 0.2s;
+     overflow-y: hidden;
+     text-align: center;
+     width: 0;
+     z-index: 2;
+   }
+   .Report-order-container input[type=text],input[type=number],input[type=email],textarea,select{
+   width: 90%;
+     margin: auto;
+     padding: 8px 8px;
+   font-size: 18px;
+   border: 2px solid #ccc;
+   border-radius: 2rem;
+   outline: 0;
+   
+   }
+   .Report-order-container input[type=submit]{
+   color:white;
+   text-align: center;
+   cursor: pointer;
+   padding: 8px 8px;
+   font-size: 15px;
+   width: 60%;
+   margin: auto;
+     background-color: rgb(0,102,153);
+     border: none;
+     border-radius: 2rem;
+   }
+   @media screen and (min-width: 600px){
+    .Report-order-container input[type=text],input[type=number],input[type=email],textarea,select{
+      font-size: 13px;
+      width: 70%;
+    }
+    .Report-order-container input[type=submit]{
+      width: 30%;
+    }
+
+   }
+   .Report-order-container p{
+   margin: auto;
+   text-align: center;
+   width: 52%;
+   color: white;
+   background-color: rgb(0,0,56);
+     padding: 10px 10px;
+     border-radius: 2rem;
+     cursor: pointer;
+   }
+   .Report-order-container p a:link{
+     text-decoration: none;
+     color:white
+   }
+   .Report-order-container p a:visited{
+     color: white;
+   }
+   .close-btn{
+     cursor: pointer;
+   }
+   .error_message{
+      text-align: center;
+      color:red;
+   }

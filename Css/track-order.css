@@ -1,0 +1,117 @@
+
+body{
+    background-color: white;
+    margin: 0;
+    font-size: 13px;
+    
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+   }
+   .order-container{
+ 
+ 
+   }
+   .order-container a:link{
+      color: rgb(0,102,153);
+   }
+   .order-container a:visited{
+      color: rgb(0,102,153);
+ 
+   }
+   .form-container{
+ margin: auto;
+ width: 95%;
+ color: gray;
+ text-align: center;
+ margin-top:  20px;
+   }
+   .form-container input[type=search]{
+    padding: 8px 8px;
+    font-size: 18px;
+    border-radius:  2rem;
+  /*  background-color: #f1f1f1;*/
+    width: 90%;
+    border: 2px solid rgb(0,102,153);
+    outline: 0;
+    margin: auto;
+    display: block;
+    outline: 0;
+   }
+   .form-container input[type=submit]{
+ 
+ background-color: rgb(0,102,153);
+ margin-top:  20px;
+ margin-bottom:  10px;
+ border: none;
+ width: 70%;
+ color: white;
+ font-size: 15px;
+ padding: 8px 8px;
+ cursor: pointer;
+ border-radius: 2rem;
+   }
+   @media screen and (min-width: 600px){
+ 
+      .form-container input[type=search]{
+ width: 40%;
+ font-size: 13px;
+      }
+ 
+      .form-container input[type=submit]{
+        width: 30%;
+      }
+   }
+ 
+   @media screen and (min-width: 600px){
+ 
+      .form-container  input[type=submit]{
+       width: 30%;
+      }
+   }
+ 
+   label{
+    font-weight: bold;
+   }
+   .search-result-info{
+    text-align: center;
+   }
+   .more-info{
+    text-align: center;
+    width: 95%;
+   }
+   .more-info b{
+    margin-left: 22px;
+    color: mediumseagreen;
+   }
+   .more-info b i{
+    color: mediumseagreen;
+    font-size: 18px;
+   }
+   .more-info i{
+   margin-left: 10px;
+   color: yellow;
+   font-size: 22px;
+   }
+   
+ .error_message{
+   text-align: center;
+   color: ;
+ }
+ 
+ .map-re-direct{
+ text-align: center;
+ background-color: rgb(0,102,153);
+ color: white;
+ cursor: pointer;
+ border-radius: 2rem;
+   padding: 8px 8px;
+   margin: auto;
+   width: 82%;
+ }
+ @media screen and (min-width: 600px){
+ 
+  .map-re-direct{
+    width: 30%;
+  }
+ 
+ }

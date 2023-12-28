@@ -1,0 +1,83 @@
+
+body{
+    background-color: ;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: lighter;
+    margin: 0;
+  }
+  .success-message-overlay{
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    overflow-y: scroll;
+  }
+  .success-message-fluid{
+    text-align: center;
+  }  
+  
+  .success-message-fluid p:nth-child(1){
+    font-size:  18px;
+    color: mediumseagreen;
+    
+    }
+  .success-message-fluid p:nth-child(2){
+  font-size: 20px;
+  color: mediumseagreen;
+  -webkit-animation: 22s loading-message 1s ease-in-out infinite;
+  animation: loading-message 2s ease-in-out infinite;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+  @keyframes loading-message {
+  
+  100%{
+    transform: scale(2);
+  }
+  
+    
+  }
+  .success-message-fluid p:nth-child(3){
+    
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+    .success-message-fluid p:nth-child(4){
+    background-color: mediumseagreen;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 8px 8px;
+    cursor: pointer;
+    }
+    
+    .success-message-fluid p:nth-child(5){
+      background-color: mediumseagreen;
+      color: white;
+      text-align: center;
+      border-radius: 2rem;
+      width: 50%;
+      margin: auto;
+      display: block;
+      padding: 8px 8px;
+      cursor: pointer;
+      margin-top: 12px;
+  
+      }
+      .success-message-fluid a:link{
+        color: white;
+        text-decoration: none;
+      }
+      .success-message-fluid a:visited{
+        color: white;
+      }
+      #copy-btn{
+        cursor: pointer;
+      }
