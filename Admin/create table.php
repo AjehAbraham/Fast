@@ -94,29 +94,6 @@ id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
 
 )";*/
 /*
-$email = "Ajehabraham51@gmail.com";
-$password = "Ajeh821203$$";
-$password = password_hash($password,PASSWORD_DEFAULT);
-$pin = 821203;
-$pin = password_hash($pin,PASSWORD_DEFAULT);
-$admin_permit = "Granted";
-$created_by = 1;
-$status = "Master";
-$date = htmlspecialchars(date("Y/m/d H:i:s"));
-$time = htmlspecialchars(date("H:i:s"));
-$ip = htmlspecialchars($_SERVER["REMOTE_ADDR"]);
-$user_agent = htmlspecialchars($_SERVER["HTTP_USER_AGENT"]);
-
-$p = "INSERT INTO Admin_Register_db(Email,Password,Pin,Admin_permit,
-Created_by,Status,Date_created,Time,Ip,User_agent	
-)
-
-VALUES('$email','$password','$pin','$admin_permit','$created_by','$status','$date','$time','$ip','$user_agent')
-";
-
-*/
-
-/*
 $p = "CREATE TABLE Product_items_edited(
 
 id INT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
