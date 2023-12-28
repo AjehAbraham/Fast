@@ -1,0 +1,61 @@
+
+.form-container-o {
+    width: 90%;
+    margin: auto;
+      }
+      .form-container-o  p{
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .form-container-o  input[type=search]{
+        padding: 8px 8px;
+        border: 2px solid #ccc;
+        outline: 0;
+        width: 92%;
+      font-size: 18px;
+        border-radius: 2rem;
+        margin: auto;
+      }
+      .form-container-o  input[type=submit]{
+        font-size: 15px;
+        background-color: rgb(0,102,100);
+        color: white;
+        cursor: pointer;
+        border: none;
+        border-radius: 2rem;
+        margin: auto;
+        width: 62%;
+            padding: 8px 8px;
+          }
+          
+      @media screen and (min-width: 600px){
+        .form-container-o  input[type=search]{
+          font-size: 13px;
+          width: 50%;
+        }
+        .form-container-o  input[type=submit]{
+            width: 30%;
+        }
+      }
+
+          table{
+            width: 98%;
+            color: black;
+                  }
+                  th{
+                    /*border: 1px solid red;*/
+                    font-weight: bold;
+                    color: rgb(0,102,100)
+                  }
+                  tr:nth-child(even){
+                    background-color: #ccc;
+                  }
+                  td{
+                    padding: 10px 10px;
+                    color: #333;
+                  }
+                  .error_message{
+                    text-align: center;
+                  }
+                  

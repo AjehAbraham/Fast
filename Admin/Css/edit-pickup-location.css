@@ -1,0 +1,95 @@
+body{
+    background-color: white;
+    margin: 0;
+    font-size: 13px;   
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+    }
+    
+    .form-container-fluid-two{
+  width: 95%;
+  margin: auto;
+  display: block;
+    }
+  @media screen and (min-width: 600px){
+    .form-container-fluid-two{
+      width: 60%;
+    }
+  }
+  
+    .form-container-fluid-two p{
+      text-align: center;
+      font-size: 15px;
+      font-weight: bold;
+    }
+    .form-container-fluid-two input[type=text],input[type=email],textarea{
+      padding: 8px 8px;
+      border: 2px solid #ccc;
+      outline: 0;
+      width: 100%;
+    font-size: 18px;
+      border-radius: 2rem;
+      margin: auto;
+    }
+    textarea{
+      padding: 8px 8px;
+      border: 2px solid #ccc;
+      outline: 0;
+      width: 100%;
+      border-radius: 2rem;
+      margin: auto;
+      font-size: 18px;
+  
+    }
+    .form-container-fluid-two select{
+      padding: 8px 8px;
+      border: 2px solid #ccc;
+      outline: 0;
+      width: 92%;
+      font-size: 18px;
+      border-radius: 2rem;
+      margin: auto;
+  
+    }
+    .form-container-fluid-two label{
+      text-align: center;
+    }
+    .form-container-fluid-two input[type=submit]{
+      font-size: 15px;
+      background-color: rgb(0,102,100);
+      color: white;
+      cursor: pointer;
+      border: none;
+      border-radius: 2rem;
+      margin: auto;
+      width: 62%;
+          padding: 8px 8px;
+        }
+        .open-teransaction-pin{
+          padding: 8px 8px;
+          margin: auto;
+          cursor: pointer;
+          color: white;
+          background-color: rgb(0,102,100);
+          border-radius: 2rem;
+          width: 62%;
+          text-align: center;
+        }
+    @media screen and (min-width: 600px){
+      .form-container-fluid-two input[type=text],input[type=email],textarea{
+        font-size: 15px;
+      }
+      textarea{
+        font-size: 15px;
+      }
+      .form-container-fluid-two input[type=submit]{
+          width: 30%;
+      }
+      .open-teransaction-pin{
+          width: 30%;
+      } 
+      .form-container-fluid-two  select{
+          font-size: 13px;
+      }
+    }
+        

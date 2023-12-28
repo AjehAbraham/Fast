@@ -1,0 +1,136 @@
+
+body{
+  background-color: white;
+  margin: 0;
+  font-size: 13px;   
+font-family: 'Poppins', sans-serif;
+font-weight: lighter;
+}
+.header-container-o{
+text-align: center;
+padding: 6px 6px;
+}
+.header-container-o input[type=search]{
+  padding: 8px 8px;
+  margin: auto;
+  width: 90%;
+  font-size: 18px;
+  border: 2px solid rgb(0,102,100);
+  border-radius: 2rem;
+  outline: 0;
+}
+.header-container-o input[type=submit]{
+
+  padding: 8px 8px;
+  margin: auto;
+  width: 60%;
+  font-size: 15px;
+  border: none;
+  border-radius: 2rem;
+  outline: 0;
+  color: white;
+  background-color: rgb(0,102,100);
+  margin-left: 10px;
+}
+@media screen and (min-width: 600px){
+  .header-container-o input[type=search]{
+    font-size: 13px;
+    width: 50%;
+  }
+  .header-container-o input[type=submit]{
+    width: 30%;
+  }
+}
+.form-container-box{
+  text-align: center;
+}
+.form-container-box b{
+  font-weight: lighter;
+}
+.form-container-box p:nth-child(1) img{
+  width: 150px;
+  height: 150px;
+  border: 5px solid   rgb(0,102,100);
+  border-radius: 50%;
+}
+.form-container-box p:nth-child(9){
+  padding: 8px 8px;
+  border-radius: 2rem;
+  text-align: center;
+  color: white;
+  background-color: rgb(0,102,100);
+  margin: auto;
+  width: 42%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.form-container-box p:nth-child(4) a:link{
+  text-decoration: none;
+  color: white;
+}
+.form-container-box p, .form-container-box b{
+  color: black;
+  font-weight: bold;
+}
+
+.form-container-box p:nth-child(4) a:visited{
+  text-decoration: none;
+  color: white;
+}
+.open-overlay{
+  text-align: center;
+  padding: 8px 8px;
+  border-top: 4px solid rgb(0,102,100);
+  background-color: #2196F3;
+  color: white;
+  cursor: pointer;
+}
+.container{
+  text-align: center;
+  overflow: hidden;
+ /* width: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;*/
+  transition: 0.1s;
+  display: none;
+}
+.container b{
+  font-weight: lighter;
+}
+.container p:nth-child(1) img{
+  width: 150px;
+  height: 150px;
+  border: 3px solid rgb(0,102,100);
+  border-radius: 50%;
+}
+.container p:nth-child(8){
+  padding: 8px 8px;
+  border-radius: 2rem;
+  text-align: center;
+  color: #777;
+  background-color: rgb(0,102,100);
+  margin: auto;
+  width: 42%;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.container p:nth-child(8) a:link{
+  text-decoration: none;
+  color: #777;
+}
+
+.container p:nth-child(8) a:visited{
+  text-decoration: none;
+  color: #777;
+}
+.back-top-top{
+  text-align: center;
+  cursor: pointer;
+  padding: 5px 5px;
+}
+.error_message{
+  color:red;
+  text-align: center;
+}

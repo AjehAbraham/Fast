@@ -1,0 +1,134 @@
+
+body{
+
+    background-color: white;
+    margin: 0;
+    font-size: 13px;   
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  }
+    .form-container-box{
+      display: block;
+      text-align: center;
+      background-color: white;
+      box-shadow:0px 16px 8px 0px rgba(0,0,0,0.4);
+      padding: 5px 5px;
+    width: 70%;
+    margin-left: 10px;
+    }
+  @media screen and (min-width: 600px){
+  
+    .form-container-box{
+      width: 30%;
+    }
+  }
+  
+    .form-container-box b{
+      font-weight: lighter;
+    }
+    .form-container-box p:nth-child(1) img{
+     margin: auto;
+     width: 120px;
+    }
+  
+    @media screen and (min-width: 600px){
+      .form-container-box p:nth-child(1) img{
+        width: 120px;
+      }
+    }
+  .form-container-box b{
+    color:black;
+    font-weight: bold;
+    font-size: 14px;
+  
+  }
+  
+  
+  .form-container{
+  font-size: 14px;
+  margin-left: 7px;
+  }
+  .form-container h1{
+    font-size: 15px;
+    color: rgb(0,102,100);
+  }
+  .form-container i{
+    color: rgb(0,102,100);
+  }
+  .form-container input{
+    padding: 8px 8px;
+    outline: 0;
+    border: 2px solid #ccc;
+    border-radius: 2rem;
+    width: 80%;
+  font-size: 18px;
+  }
+  textarea{
+    padding: 8px 8px;
+    outline: 0;
+    border: 2px solid #ccc;
+    border-radius: 2rem;
+    width: 90%;
+  font-size: 18px;
+  
+  }
+  .form-container input[type=submit]{
+    background-color: rgb(0,102,100);
+    cursor: pointer;
+    color: white;
+    border: none;
+    width: 60%;
+    font-size: 15px;
+  }
+   
+  @media screen and (min-width: 600px){
+    .form-container input,textarea{
+      font-size: 13px;
+      width: 50%;
+    } 
+    .form-container input[type=submit]{
+      width: 35%;
+    }
+  }
+  .error_message{
+    text-align: center;
+    color: red;
+  }
+  #remove-item{
+    padding: 8px 8px;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+    background-color: red;
+    cursor: pointer;
+    font-size: 13px;
+    width: 70%;
+    margin: auto;
+    display: block;
+      }
+      
+    @media screen and (min-width: 600px){
+      table{
+        width: 95%;
+      }
+    }
+    table{
+      width: 100%;
+      margin: auto;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    
+      text-align: center;
+    }
+    tr:nth-child(even){
+      background-color: #f1f1f1;
+    }
+    th{
+      padding: 5px 5px;
+      width: 20%;
+      border: 2px solid red;
+    }
+    td{
+      padding: 10px 10px;
+    }

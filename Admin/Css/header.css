@@ -1,0 +1,114 @@
+
+body{
+    background-color: white;
+    margin: 0;
+    font-size: 13px;   
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+   }
+ 
+.header-container .logo{
+box-shadow: 0px 16px 8px 0px rgba(0,0,0,0.2);  
+background-color: white;
+padding: 10px 10px;
+color: rgb(0,102,100);
+/*
+text-align: center;*/
+font-size: 22px;
+font-family: 'Tilt Prism', cursive;
+margin-bottom: 10px;
+}
+#open-sidebar-btn{
+cursor: pointer;
+  float: right;
+   color: rgb(0,0,52);
+  margin-top: 5px;
+}
+.header-container .logo i{
+    color: rgb(0,102,100);
+}
+.header-container span{
+    cursor: pointer;
+}
+     .sidebar-menu-container{
+background-color: rgb(0,102,100);
+width: 0%;
+bottom: 0;
+top: 0;
+right: 0;
+left: 0;
+position: fixed;
+color: white;
+overflow-y: scroll;
+transition: 0.2s;
+text-align: center;
+z-index: 1;
+    }
+    .add-sidebar .sidebar-menu-container{
+      width: 100%;
+    }
+    @media screen  and (min-width: 600px){
+
+      .add-sidebar  .sidebar-menu-container{
+            width: 50%
+        }
+
+
+    }
+      .sidebar-menu-container p{
+       text-align: center;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        color: white;
+    }
+    .sidebar-menu-container h3{
+       margin: auto;
+       width: 90%;
+       text-align: justify;
+       color: white;
+       padding: 12px 12px;
+        
+    }
+.sidebar-menu-container h3 i{
+
+    cursor: pointer;
+}
+
+ .sidebar-menu-container a:link{
+text-decoration: none;
+color:  white;
+    }
+.sidebar-menu-container h3:hover{
+
+    background-color: rgb(0,102,100);
+  border-left: 15px solid white;
+
+}
+
+.sidebar-menu-container h3:active{
+
+background-color: rgb(0,102,100);
+border-left: 15px solid white;
+
+}
+.close-sidebar-btn{
+margin-left: auto;
+margin-right: auto;
+display: block;
+margin-bottom: 15px;
+margin-top: 40px;
+color: white;
+}
+    .header-welcome-message{
+color: rgb(0,102,100);
+        background-color: #f1f1f1;
+        padding: 10px 10px;
+        border-bottom: 10px solid rgb(0,102,100) ;
+        margin-bottom: 10px;
+    } 
+    .header-welcome-message p{
+        text-align: center;
+        color: rgb(0,102,100);
+    }
+   

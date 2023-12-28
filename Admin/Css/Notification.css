@@ -1,0 +1,88 @@
+body{
+  background-color: white;
+  margin: 0;
+  font-size: 13px;   
+font-family: 'Poppins', sans-serif;
+font-weight: lighter;
+}
+.notification{
+    position: relative;
+  margin-top: 5px;
+    border-radius: 2px;
+    padding: 5px 5px;
+    margin-right: 20px;
+    text-align: center;
+    cursor: pointer;
+    float: right;
+  }
+
+  .notification .badge{
+    position: absolute;
+    text-align: center;
+    border-radius:  50%;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    color: white;
+    background-color: red;
+    top: -10px;
+    right: -27px;
+    padding: 5px 5px;
+    font-size: 15px;
+  } 
+  .header-container #Refresh{
+margin: auto;
+    text-align: center;
+    display: block;
+    padding: 10px 10px;
+    background-color: orange;
+    text-align: center;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+    width: 30%;
+    margin-top: 10px;
+  }
+.add-animation  #Refresh-loader{
+    -webkit-animation: re-load 1s linear infinite ;
+    animation: re-load 1s linear infinite;
+  }
+  @keyframes re-load {
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+  .container-fluid{
+    padding: 10px 10px;
+    text-align: center;
+   background-color: rgba(0,0,52);
+    color: white;
+    margin-top: 12px;
+  }
+  .container-fluid a:link{
+    text-decoration: none;
+    color: white;
+  }
+  .container-fluid a:visited{
+    text-decoration: none;
+    color: white;
+  }
+ /* .container-fluid b:nth-child(5){
+    padding: 8px 8px;
+    background-color: red;
+    border-radius: 2rem;
+margin-top: 5px;
+cursor: pointer;
+  }*/
+  .backTo_top{
+    text-align: center;
+    cursor: pointer;
+  }
+  select{
+    outline: 0;
+border-radius: 2rem;
+    padding: 10px 10px;
+    width: 60%;
+    margin-top: 15px;
+    text-align: center;
+  }
