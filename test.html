@@ -1,0 +1,933 @@
+
+
+<!DOCTYPE html>
+<html lang="eng_US">
+  <head>
+    <link rel="stylesheet" href="Css/">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+          <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+
+
+<script src="https://kit.fontawesome.com/958aace4f6.js" crossorigin="anonymous"></script>
+<title>Test</title>
+
+
+<!-- ajax and jquery link -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src= "https://code.jquery.com/jquery-3.5.0.js"></script>
+
+<!-- end of ajax link -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Montserrat:ital,wght@1,300&family=Poppins:wght@300&family=Tilt+Prism&display=swap" rel="stylesheet">
+
+      </head>
+      <body>
+
+<style>
+  body{
+    background-color: white;
+    font-size: 13px;
+    margin: 0;
+    color: red;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+       }
+  .form-container-fluid-box-overlay{
+    background-color: white;
+    overflow-y: scroll;
+    transition: 0.2s;
+    position: fixed;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+width: 0%;
+  }
+    .form-container-register{
+  margin: auto;
+  display: block;
+  width: 90%;
+  margin-bottom: 7px;
+  font-size: 13px;
+    }
+ 
+    @media  screen and (min-width: 600px) {
+      .form-container-register{
+        width: 50%;
+
+border-radius: 2rem;
+background-color: white;
+box-shadow: 0px 16px 8px 0px rgba(0,0,0,0.6);
+padding: 10px 10px;
+      }
+      
+    }
+
+    .form-container-register input[type=email],input[type=password],input[type=text]{
+  padding: 10px 10px;
+  width: 92%;
+  border-radius: 2rem;
+  border: 2px solid #ccc;
+  font-size: 18px;
+  margin: auto;
+  display: block;
+  outline: 0;
+    }
+    @media screen and (min-width: 600px){
+
+      .form-container-register input[type=email],input[type=password],input[type=text]{
+        font-size: 13px;;
+      }
+    }
+    .form-container-register input[type=submit]{
+      font-size: 15px;
+      margin: auto;
+      display: block;
+      cursor: pointer;
+      padding: 8px 8px;
+      width: 60%;
+      border-radius: 2rem;
+      color: white;
+      background-color: rgb(0,102,153);
+      border: none;
+      margin-bottom: 8px;
+    }
+    .form-container-register b:nth-child(10){
+      margin-top: 9px;
+      margin-left: 3px;
+      font-weight: ;
+      position: absolute;
+    }
+    .form-container-register b:nth-child(13){
+      margin-top: 9px;
+      margin-left: 3px;
+      font-weight: ;
+      position: absolute;
+    }
+    .form-container-register h1{
+      color: rgb(0,102,153);
+      text-align: center;
+      font-size: 18px;
+   
+    }
+    .form-container-register h2{
+      color: rgb(0,102,153);
+      font-size: 18px;
+      text-align: center;
+    }
+    .form-container-register p:nth-child(1){
+      margin: auto;
+      display: block;
+      text-align: center;
+      cursor: pointer;
+    }
+  .form-container-register  .switch {
+      position: relative;
+      cursor: pointer;
+      display: inline-block;
+      width: 37px;
+      height: 20px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+     
+    }
+  .form-container-register .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .form-container-register .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form-container-register .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .form-container-register input:checked + .slider {
+    background-color: rgb(0,102,153);
+  }
+  
+  .form-container-register input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+ .form-container-register input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .form-container-register .slider.round {
+    border-radius: 34px;
+  }
+  
+  .form-container-register .slider.round:before {
+    border-radius: 50%;
+  }
+  .form-container-register p a:link{
+    color: red;
+  }
+  .form-container-register a:visited{
+    color: red;
+  }
+  .form-container-register label{
+    
+  margin: auto;
+  display: block;
+  text-align: center;
+  
+  }
+  #passcode_text,#terms{
+    margin-left: 7px;;
+  }
+  #OpenForm{
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+  }
+</style>
+
+<p id="OpenForm">Open</p>
+
+  <div class="form-container-fluid-box-overlay">
+    <div class="form-container-register">
+      
+      <p><i class="fa fa-close" id="closeForm"></i></p>
+      <h1>Register</h1>
+      <form  id="FormDatas">
+      
+        <label><b>Email:</b></label>
+        
+        <input type="email"  name="email" autofocus="off" size="25" autocomplete="on"  placeholder="Enter mail...">
+        
+        <br>
+        
+        <label><b>Password</b></label>
+      
+        <input type="password" name="password" id="password_text" autofocus="off" autocomplete="off" size="25"  placeholder="password">
+  
+         <br>
+     
+        <label class="switch">
+          <input type="checkbox" onclick="show_password_text()">
+          <span class="round slider">
+            
+          </span></label><b id="passcode_text"> show password</b>
+        <br>
+            
+        <label class="switch">
+          <input type="checkbox" value="Yes" id="terms" name="terms">
+          <span class="round slider">
+            
+          </span></label>   <b id="terms"> I accept the terms and condition</b>
+        
+          <p><a href="#">Terms and conditions</a></p>
+          <p><a href="#">Privacy Policy</a></p>
+          <b class="reg_error_message" style="text-align: center;margin:auto;display: block; color: rgba(255,0,0,0.8);"></b>
+  
+            <input type="submit">
+        
+        </form>
+    </div>
+    
+  </div>
+<script>
+  
+  if(window.history.replaceState){
+
+    window.history.replaceState(null,null,window.location.href);
+    
+    
+      }
+      function show_password_text(){
+    
+    var passcode = document.querySelector("#password_text");
+    
+    if (passcode.type == "password"){
+    
+    document.querySelector("#passcode_text").innerHTML ="Hide password";
+      
+    
+    passcode.type = "text";
+    
+    
+    }else{
+    
+    
+      document.querySelector("#passcode_text").innerHTML ="Show password";
+      
+      passcode.type ="password";
+    }
+    
+    
+    
+      }
+      
+    
+
+
+      $(document).ready(function (e) {
+
+        $("#FormData").on('submit', (function(e){
+        
+        
+          e.preventDefault();
+          
+         document.querySelector(".loader-container-overlay").style.display= "block";
+        
+           $.ajax({
+         
+            url: 'Process/Register',
+        type : 'POST',
+        data: new FormData(this),
+        cache: false,
+        contentType: false,
+        processData: false,
+            success:function(Data){
+        
+              document.querySelector(".loader-container-overlay").style.display= "none";
+             
+             document.querySelector(".error_message").innerHTML = Data;
+        
+        
+        if(Data == "\r\nsuccess"){
+          
+
+          document.querySelector("#FormData").reset();
+          
+          document.querySelector(".error_message").innerHTML = "";
+        
+      
+        
+        }else if(Data == "success"){
+        
+          document.querySelector("#FormData").reset();
+          
+          document.querySelector(".error_message").innerHTML = "";
+        
+          
+        
+        }
+        
+            },
+            error:function(Data){
+              document.querySelector(".loader-container-overlay").style.display= "none";
+              document.querySelector(".error_message").innerHTML = Data;
+        
+            }
+          
+           });
+        
+        
+        
+        }));
+        
+        
+  
+      });
+
+      document.querySelector("#closeForm").addEventListener("click",CloseRegForm);
+function CloseRegForm(){
+document.querySelector(".form-container-fluid-box-overlay").style.width="0%";
+
+}
+
+document.querySelector("#OpenForm").addEventListener("click",OpenRegForm);
+function OpenRegForm(){
+document.querySelector(".form-container-fluid-box-overlay").style.width="100%";
+
+}
+</script>
+  <style>
+    body {
+      background-color: white;
+      font-size: 1px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: lighter;
+      margin: 0;
+    }
+
+    /*.Order-success-status{
+  padding: 7px 7px;
+  background-color: mediumseagreen;
+  color: white;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}*/
+  </style>
+
+
+  <!--div class="Order-success-status">
+    <p>Item has been added successfully</p>
+  </div-->
+  <!--style>
+  .Edit-profile-pic-container{
+left: 0;
+right: 0;
+top: 0;
+bottom: 0;
+position: fixed;
+text-align: center;
+  }
+  .Edit-profile-pic-container p:nth-child(1){
+   text-align: center;
+    color: rgb(0, 102, 153);
+  }
+  .Edit-profile-pic-container p:nth-child(3){
+   padding: 10px 10px;
+   background-color: rgb(0, 102, 153);
+   color: white;
+   width: 62%;
+   margin: auto;
+   display: block;
+    border-radius: 2rem;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-align: center;
+  }
+@media screen and (min-width: 600px){
+  .Edit-profile-pic-container p:nth-child(3){
+  width: 22%;
+}
+}
+  .Edit-profile-pic-container p:nth-child(4){
+    padding: 10px 10px;
+    background-color: rgb(0, 102, 153);
+    color: white;
+    width: 62%;
+    margin: auto;
+    display: block;
+     border-radius: 2rem;
+     cursor: pointer;
+    margin-bottom: 12px;
+    text-align: center;
+   }
+
+   @media screen and (min-width: 600px){
+    .Edit-profile-pic-container p:nth-child(4){
+    width: 22%;
+  }
+  }
+  .Dp-container{
+margin: auto;
+display: block;
+padding: 10px 10px;
+  }
+  .Dp-container img{
+    margin: auto;
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid rgb(0, 102, 153);
+  }
+  .ckose-Edit-dp-btn{
+font-size: 20px;
+color: grey;
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+</style>
+
+
+<div class="Edit-profile-pic-container">
+<p>Upload New Photo</p>
+  <div class="Dp-container">
+    <img src="">
+    </div>
+
+    <p>Add Photo</p>
+    <p>Upload Photo</p>
+
+    <p><i class="fa fa-close" id="ckose-Edit-dp-btn"></i></p>
+  </div-->
+
+  <!--style>
+    body {
+      background-color: white;
+      font-size: 15px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: lighter;
+      margin: 0;
+    }
+
+    .Live-chat-header-container {
+      padding: 2px 2px;
+      background-color: #333
+        /*rgb(0, 102, 152)*/
+      ;
+      color: white;
+      font-size: 10px;
+    }
+
+    .Live-chat-header-container input[type=search] {
+      padding: 7px 7px;
+      border: 2px solid #ccc;
+      font-size: 18px;
+      border-radius: 2rem;
+      outline: 0;
+      width: 68%;
+    }
+
+    @media screen and (min-width: 600px) {
+      .Live-chat-header-container input[type=search] {
+        width: 44%;
+      }
+    }
+
+    .Live-chat-header-container input[type=submit] {
+      padding: 12px 12px;
+      border: none;
+      font-size: 13px;
+      border-radius: 2rem;
+      outline: 0;
+      width: 31%;
+      color: white;
+      background-color: mediumseagreen;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: 600px) {
+      .Live-chat-header-container input[type=submit] {
+        width: 30%;
+      }
+    }
+
+    .Live-chat-header-container p:nth-child(4) {
+      padding: 10px 10px;
+      background-color: rgb(0, 102, 152);
+      color: white;
+      text-align: center;
+      border-radius: 2rem;
+      width: 66%;
+      cursor: pointer;
+    }
+
+    .Live-chat-header-container p:nth-child(4) a:link {
+      color: white;
+      text-decoration: none;
+    }
+
+    .Live-chat-header-container p:nth-child(4) a:visited {
+      color: white;
+    }
+
+    @media screen and (min-width: 600px) {
+      .Live-chat-header-container p:nth-child(4) {
+        width: 29%;
+      }
+    }
+  </style>
+
+
+  <div class="Live-chat-header-container">
+
+    <b>Live chat</b><br>
+    <p><input type="search" placeholder="Start Typing...">
+
+      <input type="submit" value="search" placeholder="Search">
+    </p>
+
+    <p>Start a conversation</p>
+
+  </div>
+  </div>
+
+
+  <style>
+    .Live-chat-container-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: grey;
+    }
+
+    .intro-container {
+      background-color: rgb(0, 102, 152);
+      color: white;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1px 1px;
+    }
+
+    .intro-container i {
+      float: right;
+      margin-left: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .intro-container img {
+      margin: auto;
+      display: block;
+      text-align: center;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .intro-container p:nth-child(3) {
+      text-align: center;
+      color: white;
+      font-size: 13px;
+    }
+
+    .close-chat-btn {
+      float: right;
+      cursor: pointer;
+      margin-right: 10px;
+
+    }
+
+    .message-body-container {
+      top: 0;
+      overflow-y: scroll;
+      position: sticky;
+    }
+
+    .user-one-message {
+      padding: 7px 7px;
+      float: left;
+      background-color: rgba(0, 102, 152, 0.3);
+      color: white;
+      font-size: 12px;
+      margin-top: 15px;
+      border-radius: 2rem;
+      width: 46%;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .user-two-message {
+      padding: 7px 7px;
+      float: right;
+      background-color: rgb(0, 0, 52);
+      color: white;
+      font-size: 12px;
+      margin-top: 20px;
+      border-radius: 2rem;
+      width: 46%;
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .form-container-fluid {
+      position: fixed;
+      left: 0;
+      right: 0;
+
+      bottom: 0;
+      margin: auto;
+      display: inline;
+      background-color: rgb(0, 0, 52);
+      padding: 3px 3px;
+      display: inline-block;
+
+    }
+
+    .form-container-fluid textarea {
+      padding: 10px 10px;
+      border-radius: 2rem;
+      border: 2px solid #ccc;
+      outline: 0;
+      width: 60%;
+      margin-left: 7px;
+      margin-top: 10px;
+    }
+
+    .form-container-fluid input[type=submit] {
+      width: 26%;
+      padding: 12px 12px;
+      cursor: pointer;
+      text-align: center;
+      background-color: rgb(0, 102, 152);
+      border: none;
+      border-radius: 2rem;
+      color: white;
+      margin-bottom: ;
+    }
+
+    .option-btn {
+      float: right;
+      margin-right: 20px;
+      color: rgb(0, 102, 152);
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .Message-otpions {
+      background-color: white;
+      z-index: 2;
+      position: fixed;
+      bottom: 0;
+      top: 0;
+      right: 0;
+      width: 50%;
+      text-align: center;
+      display: none;
+      transition: 0.2s;
+    }
+
+    @media screen and (min-width: 600px) {
+      .Message-otpions {
+        width: 30%;
+      }
+    }
+
+    .Message-otpions p {
+      cursor: pointer;
+    }
+
+    .Message-otpions p:last-child {
+      color: red;
+      font-size: 22px;
+    }
+  </style>
+
+  <script>
+    document.querySelector(".close-chat-btn").addEventListener("click", Close_live_chat);
+    function Close_live_chat() {
+      document.querySelector(".Live-chat-container-overlay").style.display = "none";
+    }
+  </script>
+
+
+
+  <div class="Live-chat-container-overlay">
+
+    <div class="intro-container">
+      <b class="close-chat-btn"><i class="fa fa-arrow-up"></i></b>
+      <p><img src=""></p>
+      <p>Ajeh Abraham</p>
+    </div>
+
+
+    <div class="message-body-container">
+      <div class="user-one-message">Hello Ajeh,my name is John how may i help you?</div>
+      <div class="user-two-message">Hello John,i'm having an Error trying to make payment to purchase goods.</div>
+
+      <div class="user-one-message">Hello Ajeh,my name is John how may i help you?</div>
+      <div class="user-two-message">Hello John,i'm having an Error trying to make payment to purchase goods.</div>
+
+      <div class="user-one-message">Hello Ajeh,my name is John how may i help you?</div>
+      <div class="user-two-message">Hello John,i'm having an Error trying to make payment to purchase goods.</div>
+
+    </div>
+
+
+
+    <div class="form-container-fluid">
+      <textarea cols="10" rows="1-0" placeholder="Send a message..."></textarea>
+      <input type="submit" value="send">
+      <b class="option-btn">...</b>
+    </div>
+
+
+
+    <div class="Message-otpions">
+      <p><i class=" fa fa-image"></i> Add Image</p>
+      <p><i class="fa fa-folder"></i> Attachment</p-->
+      <!--p><i class="fa fa-recorder"></i> Send Audio</p-->
+      <!--p><i class="fa fa-close"></i> End Chat</p>
+      <p class="close-option-btn"><i class=" fa fa-close"></i> close</p>
+    </div>
+
+
+    <script>
+
+      document.querySelector(".option-btn").addEventListener("click", OpenOption_btn);
+
+      function OpenOption_btn() {
+        document.querySelector(".Message-otpions").style.display = "block";
+
+        document.querySelector(".Message-otpions").style.width = "40%";
+      }
+
+
+      document.querySelector(".close-option-btn").addEventListener("click", Close_Option_btn);
+
+      function Close_Option_btn() {
+
+        document.querySelector(".Message-otpions").style.width = "0%";
+      }
+
+
+
+      $(document).ready(function (e) {
+
+        $("#Edit-form-data").on('submit', (function (e) {
+
+
+          e.preventDefault();
+
+          // document.querySelector(".loader-container-overlay").style.display= "block";
+
+          $.ajax({
+
+            url: 'Process/Edit profile',
+            type: 'POST',
+            data: new FormData(this),
+            cache: false,
+            contentType: false,
+            processData: false,
+            success: function (Data) {
+
+              //document.querySelector(".loader-container-overlay").style.display= "none";
+
+              document.querySelector(".Edit-data_error_message").innerHTML = Data;
+
+
+              if (Data == "\r\nok") {
+
+                document.querySelector("#Edit-form-data").reset();
+
+
+                alert("Updated successfully");
+
+                window.reload();
+
+              } else if (Data == "ok") {
+
+
+                document.querySelector("#Edit-form-data").reset();
+
+
+                alert("Updated successfully");
+
+                window.reload();
+
+              }
+
+
+            },
+            error: function (Data) {
+              //document.querySelector(".loader-container-overlay").style.display= "none";
+
+              document.querySelector(".Edit-data_error_message").innerHTML = Data;
+
+            }
+
+          });
+
+
+
+        }));
+
+
+      });
+
+
+      document.querySelector(".open-form-data-btn").addEventListener("click", OpenFrom);
+      function OpenFrom(event) {
+
+        document.querySelector(".form-container-overlay-box").style.width = "100%";
+      }
+
+      document.querySelector("#close-form-data-btn").addEventListener("click", CloseFrom);
+      function CloseFrom() {
+
+        document.querySelector(".form-container-overlay-box").style.width = "0%";
+      }
+    </script-->
+
+
+
+
+
+    <script>
+      
+    
+$(document).ready(function (e) {
+      
+  $("#Add-bal-form").on('submit', (function(e){
+  
+  e.preventDefault();
+  
+   document.querySelector(".loader-container-overlay").style.display= "block";
+  
+  $.ajax({
+  
+  url: 'Process/Add-balance',
+  type : 'POST',
+  data: new FormData(this),
+  cache: false,
+  contentType: false,
+  processData: false,
+  success:function(Data){
+  
+  document.querySelector(".loader-container-overlay").style.display= "none";
+  
+  document.querySelector(".Add_bal_error_message").innerHTML = Data;
+  
+  
+  
+  if(Data == "success"){
+  
+    alert("successful");
+  
+
+  }else if(Data == "\r\nsuccess"){
+  
+  
+    alert("successful");
+
+  
+  }
+  
+  
+  
+  },
+  error:function(Data){
+  document.querySelector(".loader-container-overlay").style.display= "none";
+  
+  document.querySelector(".Add_bal_error_message").innerHTML = Data;
+  
+  }
+  
+  });
+  
+  
+  
+  }));
+  
+  
+  });
+    </script>
+
+</body>
+
+</html>
